@@ -1,0 +1,15 @@
+{
+  "name": "pagina-web",
+  "version": "1.0.0",
+  "description": "<h1>SHTech Academy</h1>\r SHTech Academy es un proyecto educativo que se dedica a la enseñanza de la ciencia y la tecnología.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gh-pages": "^3.2.3"
+  }
+}

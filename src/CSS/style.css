@@ -1,0 +1,259 @@
+/**Nueva paleta de colores*/
+
+/**
+ * #E26A2C  //Naranja oscuro
+ * #FF8243  //Naranja
+ * #FDA65D  //Melocoton
+ * #FFD07F  //Naranja claro
+ */
+
+/**PALETAS ANTIGUA*/
+
+/**.color1 {color: #0c4b83;}// Aqua oscuro
+.color2 {color: #0a6193;}// Aqua oscuro un poco mas claro
+.color3 {color: #0986aa;}// Aqua oscuro un poco mas claro pero no tanto
+.color4 {color: #08bcbe;}// Azul verdoso oscuro
+.color5 {color: #03fcbd;}// Azul verdoso*/
+
+/**.color1 {color: #007bff;} //Azul
+.color2 {color: #c946fc;} //Morado
+.color3 {color: #ff68a5;} //Rosado
+.color4 {color: #ffd782;} //Naranja bajito
+.color5 {color: #ffffa7;} //Amarillo*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: justify;
+}
+
+body{
+  transition: all .5s;
+  background-color: #fdff6e;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='105' viewBox='0 0 80 105'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='death-star' fill='%23fdc05c' fill-opacity='1'%3E%3Cpath d='M20 10a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm15 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zM20 75a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zm30-65a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm0 65a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zM35 10a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zM5 45a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zm60 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+img{
+    border-radius: 20px;
+}
+.logo{
+    width: 300px;
+}
+
+.logo-mecatronica{
+    width: 300px;
+}
+.logo-arduino{
+    width: 200px;
+}
+.logo-simuladores{
+    width: 300px;
+}
+.side-bar ul{
+    list-style: none;
+}
+
+.side-bar{
+    display: block;
+    position: fixed;
+    left: -250px;
+    width: 150px;
+    height: 100%;
+    background: #FDA65D/*#ffffa7*/;
+    transition:all .5s ease;
+}
+
+.side-bar header{
+    font-family: 'Oswald', sans-serif;
+    font-size: 27px;
+    color: whitesmoke;
+    text-align: center;
+    line-height: 70px;
+    user-select: none;
+    background-color:#E26A2C ;
+}
+.side-bar ul a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    padding-left: 15px;
+    box-sizing: border-box;
+    transition: all .5s;
+    font-family: 'Oswald', sans-serif;
+}
+
+.side-bar li:hover a{
+    padding-left: 35px;
+    background-color: #e75f1b;
+}
+#check{
+    display: none;
+}
+
+label #btn, label #cancel{
+    position: absolute;
+    cursor: pointer;
+    border-radius: 10px;
+    background: #FF8243/*#c946fc*/;
+}
+
+label #btn{
+    left: 10px;
+    top: 25px;
+    font-size: 35px;
+    color: rgb(255, 255, 255);
+    padding: 6px 12px;
+    transition: all .5s;
+}
+
+label #cancel{
+    z-index: 1111;
+    left: -195px;
+    top: 17px;
+    font-size: 30px;
+    color: white;
+    padding: 4px 9px;
+    transition: all .5s;
+}
+#check:checked ~ .side-bar{
+    left: 0px;
+}
+#check:checked ~ label #btn{
+    left: 250px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#check:checked ~ label #cancel{
+    left: 190px;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
+
+p{
+    padding-right: 10px;
+}
+
+a{
+    text-decoration: none;
+}
+
+h2{
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
+.container{
+    user-select: none;
+    /* background: #08bcbe/*#ffd782*/;
+    padding: 20px;
+    text-align: justify;
+    margin-left: 100px;
+    margin-right: 100px;
+    background: white;
+    border-radius: 20px;
+}
+/*#check:checked ~ .container{
+}*/
+
+#text{
+    text-align: center;
+    border-radius: 10px;
+    display:flex;
+    margin:auto;
+    width:80%;
+}
+#text2{
+    text-align: center;
+    border-radius: 10px;
+    display:flex;
+    margin:auto;
+    width:80%;
+}
+#btn-bar{
+    padding: 2px;
+    width: auto;
+    margin: auto;
+    display: flex;
+    cursor: pointer;
+}
+
+.img{
+    width: 200px;
+    float: right;
+    border: 3px solid black;
+}
+.img-normal{
+    width: 200px;
+    border: 3px solid black;
+    margin: auto;
+    display: flex;
+}
+
+.main{
+    width: 300px;
+    border: 3px solid black;
+}
+
+/**Quizz section*/
+.instructions {
+  text-align: center;
+  font-size: 20px;
+  padding-top: 15px;
+  padding-bottom: 30px;
+}
+
+.question {
+padding-bottom: 20px;
+padding-top: 20px;
+}
+
+.options {
+display: flex;
+width: 200px;
+height: 30px;
+text-align: center;
+border-radius: 10px;
+margin: auto;
+background: #FFD07F;
+}
+
+.btn {
+margin: auto;
+text-align: center;
+padding: 5px;
+display: flex;
+width: auto;
+border-radius: 5px;
+background: orange;
+}
+
+.link{
+    margin: auto;
+    color: orange;
+    transition: all .5s;
+}
+
+@media (max-width:500px){
+    .logo{
+    width: 80%;
+    }
+    .logo-arduino{
+    width: 80%;
+    }
+    .logo-mecatronica{
+    width: 80%;
+    }
+    .logo-simuladores{
+    width: 80%;
+    }
+    .container{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+}
