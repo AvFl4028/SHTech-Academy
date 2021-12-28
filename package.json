@@ -4,7 +4,8 @@
   "description": "<h1>SHTech Academy</h1>\r SHTech Academy es un proyecto educativo que se dedica a la enseñanza de la ciencia y la tecnología.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "publish": "gh-pages -d src/"
   },
   "keywords": [],
   "author": "",
