@@ -148,6 +148,11 @@ h2{
     text-align: center;
     font-family: 'Oswald', sans-serif;
 }
+
+h3{
+    text-align: left;
+    font-family: 'Oswald', sans-serif;
+}
 .container{
     user-select: none;
     /* background: #08bcbe/*#ffd782*/;
